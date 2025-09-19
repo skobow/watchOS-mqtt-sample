@@ -1,38 +1,38 @@
 # MQTT watchOS Sample
 
-Dieses Repository enthält eine minimale watchOS Beispielapplikation, die zeigt, wie man mit [MQTTNio](https://github.com/adam-fowler/mqtt-nio) über WebSockets eine Verbindung zu einem MQTT Broker von einer eigenständigen Apple Watch Anwendung aufbaut. Die App visualisiert den Verbindungsstatus, listet eintreffende Nachrichten aus dem `watch/#` Topic und bietet einen Button, der "Hello MQTT!" auf `watch/hello` publiziert.
+This repository contains a minimal watchOS sample application that demonstrates how to establish a WebSocket connection from an independent Apple Watch app to an MQTT broker using [MQTTNio](https://github.com/adam-fowler/mqtt-nio). The app visualizes the connection status, lists incoming messages from the `watch/#` topic, and exposes a button that publishes “Hello MQTT!” to `watch/hello`.
 
-## Projektstruktur
+## Project structure
 
 ```
 WatchMQTTSample/
 └── WatchMQTTSample/
-    ├── ContentView.swift          // SwiftUI Oberfläche
-    ├── MQTTWatchClient.swift      // MQTTNio Integration
-    ├── MessageEntry.swift         // Modell für eingehende Nachrichten
-    └── MQTTWatchSampleApp.swift   // App Entry Point
+    ├── ContentView.swift          // SwiftUI interface
+    ├── MQTTWatchClient.swift      // MQTTNio integration
+    ├── MessageEntry.swift         // Model for incoming messages
+    └── MQTTWatchSampleApp.swift   // App entry point
 ```
 
-Die Dateien können einfach in ein neues **watchOS App** Projekt in Xcode kopiert werden. MQTTNio wird als Swift Package eingebunden.
+You can copy the files into a new **watchOS App** project in Xcode. MQTTNio is integrated as a Swift Package.
 
-## Vorbereitung in Xcode
+## Xcode setup
 
-1. Erstelle in Xcode ein neues Projekt vom Typ **watchOS App** (SwiftUI, minimal watchOS 9).
-2. Aktiviere unter _General → Deployment_ die Option **App is independent**, damit die App auch ohne gekoppeltes iPhone über LTE funktionieren kann.
-3. Füge unter _Signing & Capabilities_ die Berechtigung **Background Modes → Background fetch** hinzu, um MQTT Verbindungen stabil zu halten.
-4. Öffne _File → Add Packages…_ und füge das Package `https://github.com/adam-fowler/mqtt-nio.git` mit der aktuellen Version hinzu.
-5. Ersetze die automatisch generierten Dateien in der Watch App Zielgruppe mit den Dateien aus diesem Repository.
+1. Create a new **watchOS App** project in Xcode (SwiftUI, minimum watchOS 9).
+2. Enable **App is independent** under _General → Deployment_ so the app can operate over LTE without a paired iPhone.
+3. Add **Background Modes → Background fetch** under _Signing & Capabilities_ to keep MQTT connections stable.
+4. Open _File → Add Packages…_ and add the package `https://github.com/adam-fowler/mqtt-nio.git` at the current version.
+5. Replace the auto-generated files in the watch app target with the files from this repository.
 
-Die Standard-Konfiguration im Code verbindet sich verschlüsselt via WebSocket (`wss`) mit dem öffentlichen Testbroker `broker.emqx.io` auf Port `8084`. Passe `MQTTWatchClient.Configuration` nach Bedarf (Host, Pfad, Zugangsdaten) an.
+The default configuration in the code connects securely via WebSocket (`wss`) to the public test broker `broker.emqx.io` on port `8084`. Adjust `MQTTWatchClient.Configuration` as needed (host, path, credentials).
 
-## Laufzeitverhalten
+## Runtime behavior
 
-* Beim Start stellt die App eine MQTT WebSocket-Verbindung her und abonniert `watch/#`.
-* Eingehende Nachrichten erscheinen in einer Liste, neueste Einträge oben.
-* Der Button **Send Hello** publiziert den Text "Hello MQTT!" auf `watch/hello`.
-* Bei Verbindungsverlust versucht die App automatisch einen Reconnect.
+* On launch, the app creates an MQTT WebSocket connection and subscribes to `watch/#`.
+* Incoming messages appear in a list, with the latest entries at the top.
+* The **Send Hello** button publishes the text “Hello MQTT!” to `watch/hello`.
+* If the connection drops, the app automatically attempts to reconnect.
 
-## Hinweise
+## Notes
 
-* Für produktive Einsätze sollten Zertifikate validiert, Fehlerzustände ausführlicher behandelt und ein persistentes Speichern der Nachrichten umgesetzt werden.
-* Auf der Watch empfiehlt sich, den Broker mit kurzen Keep-Alive Intervallen und QoS 1 zu betreiben, um Mobilfunk-Nutzung zu optimieren.
+* For production usage you should validate certificates, handle error states more comprehensively, and persist messages locally.
+* On the watch it is advisable to configure the broker with short keep-alive intervals and QoS 1 to optimize cellular usage.
