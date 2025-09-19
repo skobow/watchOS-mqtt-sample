@@ -21,10 +21,10 @@ final class MQTTWatchClient: ObservableObject {
         var password: String?
 
         static let `default` = Configuration(
-            host: "broker.emqx.io",
-            port: 8084,
+            host: "broker.hivemq.com",
+            port: 8000,
             path: "/mqtt",
-            useTLS: true,
+            useTLS: false,
             username: nil,
             password: nil
         )

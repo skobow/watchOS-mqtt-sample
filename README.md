@@ -23,7 +23,7 @@ You can copy the files into a new **watchOS App** project in Xcode. MQTTNio is i
 4. Open _File → Add Packages…_ and add the package `https://github.com/adam-fowler/mqtt-nio.git` at the current version.
 5. Replace the auto-generated files in the watch app target with the files from this repository.
 
-The default configuration in the code connects securely via WebSocket (`wss`) to the public test broker `broker.emqx.io` on port `8084`. Adjust `MQTTWatchClient.Configuration` as needed (host, path, credentials).
+The default configuration in the code connects via WebSocket to the public HiveMQ broker `broker.hivemq.com` on port `8000`. Adjust `MQTTWatchClient.Configuration` as needed (host, TLS usage, path, credentials).
 
 ## Runtime behavior
 
