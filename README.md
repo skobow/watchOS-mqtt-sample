@@ -5,6 +5,8 @@ SwiftUI using [MQTTNIO](https://github.com/swift-server/MQTTNIO). The app shows
 the current connection state, streams incoming messages, and lets the user send
 a simple greeting payload.
 
+![Demo](assets/demo.gif)
+
 ## Features
 
 - Connects to an MQTT broker over WebSockets with optional TLS support.
