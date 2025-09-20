@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9CCA95D2E7EDE6E007119AA /* NIOSSL in Frameworks */ = {isa = PBXBuildFile; productRef = A9CCA95C2E7EDE6E007119AA /* NIOSSL */; };
+		A9CCA9602E7EDE79007119AA /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = A9CCA95F2E7EDE79007119AA /* MQTTNIO */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9CCA9292E7D8F21007119AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CCA90D2E7D8F20007119AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CCA9182E7D8F20007119AA;
+			remoteInfo = "watchOS-mqtt-sample Watch App";
+		};
+		A9CCA9332E7D8F21007119AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CCA90D2E7D8F20007119AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CCA9182E7D8F20007119AA;
+			remoteInfo = "watchOS-mqtt-sample Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9CCA9192E7D8F20007119AA /* watchOS-mqtt-sample Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS-mqtt-sample Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CCA9282E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchOS-mqtt-sample Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CCA9322E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watchOS-mqtt-sample Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A9CCA91D2E7D8F20007119AA /* watchOS-mqtt-sample Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "watchOS-mqtt-sample Watch App";
+			sourceTree = "<group>";
+		};
+		A9CCA92B2E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "watchOS-mqtt-sample Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A9CCA9352E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "watchOS-mqtt-sample Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9CCA9162E7D8F20007119AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CCA95D2E7EDE6E007119AA /* NIOSSL in Frameworks */,
+				A9CCA9602E7EDE79007119AA /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA9252E7D8F21007119AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA92F2E7D8F21007119AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9CCA90C2E7D8F20007119AA = {
+			isa = PBXGroup;
+			children = (
+				A9CCA91D2E7D8F20007119AA /* watchOS-mqtt-sample Watch App */,
+				A9CCA92B2E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests */,
+				A9CCA9352E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests */,
+				A9CCA94D2E7EB43B007119AA /* Frameworks */,
+				A9CCA9142E7D8F20007119AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9CCA9142E7D8F20007119AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CCA9192E7D8F20007119AA /* watchOS-mqtt-sample Watch App.app */,
+				A9CCA9282E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests.xctest */,
+				A9CCA9322E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CCA94D2E7EB43B007119AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9CCA9182E7D8F20007119AA /* watchOS-mqtt-sample Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CCA93C2E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch App" */;
+			buildPhases = (
+				A9CCA9152E7D8F20007119AA /* Sources */,
+				A9CCA9162E7D8F20007119AA /* Frameworks */,
+				A9CCA9172E7D8F20007119AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A9CCA91D2E7D8F20007119AA /* watchOS-mqtt-sample Watch App */,
+			);
+			name = "watchOS-mqtt-sample Watch App";
+			packageProductDependencies = (
+				A9CCA95C2E7EDE6E007119AA /* NIOSSL */,
+				A9CCA95F2E7EDE79007119AA /* MQTTNIO */,
+			);
+			productName = "watchOS-mqtt-sample Watch App";
+			productReference = A9CCA9192E7D8F20007119AA /* watchOS-mqtt-sample Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9CCA9272E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CCA9432E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch AppTests" */;
+			buildPhases = (
+				A9CCA9242E7D8F21007119AA /* Sources */,
+				A9CCA9252E7D8F21007119AA /* Frameworks */,
+				A9CCA9262E7D8F21007119AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CCA92A2E7D8F21007119AA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9CCA92B2E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests */,
+			);
+			name = "watchOS-mqtt-sample Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "watchOS-mqtt-sample Watch AppTests";
+			productReference = A9CCA9282E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9CCA9312E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CCA9462E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch AppUITests" */;
+			buildPhases = (
+				A9CCA92E2E7D8F21007119AA /* Sources */,
+				A9CCA92F2E7D8F21007119AA /* Frameworks */,
+				A9CCA9302E7D8F21007119AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CCA9342E7D8F21007119AA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9CCA9352E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests */,
+			);
+			name = "watchOS-mqtt-sample Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "watchOS-mqtt-sample Watch AppUITests";
+			productReference = A9CCA9322E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9CCA90D2E7D8F20007119AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A9CCA9182E7D8F20007119AA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A9CCA9272E7D8F21007119AA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A9CCA9182E7D8F20007119AA;
+					};
+					A9CCA9312E7D8F21007119AA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A9CCA9182E7D8F20007119AA;
+					};
+				};
+			};
+			buildConfigurationList = A9CCA9102E7D8F20007119AA /* Build configuration list for PBXProject "watchOS-mqtt-sample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9CCA90C2E7D8F20007119AA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A9CCA95B2E7EDE6E007119AA /* XCRemoteSwiftPackageReference "swift-nio-ssl" */,
+				A9CCA95E2E7EDE79007119AA /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A9CCA9142E7D8F20007119AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9CCA9182E7D8F20007119AA /* watchOS-mqtt-sample Watch App */,
+				A9CCA9272E7D8F21007119AA /* watchOS-mqtt-sample Watch AppTests */,
+				A9CCA9312E7D8F21007119AA /* watchOS-mqtt-sample Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9CCA9172E7D8F20007119AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA9262E7D8F21007119AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA9302E7D8F21007119AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9CCA9152E7D8F20007119AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA9242E7D8F21007119AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CCA92E2E7D8F21007119AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CCA92A2E7D8F21007119AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CCA9182E7D8F20007119AA /* watchOS-mqtt-sample Watch App */;
+			targetProxy = A9CCA9292E7D8F21007119AA /* PBXContainerItemProxy */;
+		};
+		A9CCA9342E7D8F21007119AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CCA9182E7D8F20007119AA /* watchOS-mqtt-sample Watch App */;
+			targetProxy = A9CCA9332E7D8F21007119AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9CCA93A2E7D8F21007119AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9CCA93B2E7D8F21007119AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A9CCA93D2E7D8F21007119AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-mqtt-sample";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		A9CCA93E2E7D8F21007119AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-mqtt-sample";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		A9CCA9442E7D8F21007119AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchOS-mqtt-sample Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watchOS-mqtt-sample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		A9CCA9452E7D8F21007119AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watchOS-mqtt-sample Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watchOS-mqtt-sample Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		A9CCA9472E7D8F21007119AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchOS-mqtt-sample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		A9CCA9482E7D8F21007119AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R47UKTVQG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "skobow.net.watchOS-mqtt-sample-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "watchOS-mqtt-sample Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9CCA9102E7D8F20007119AA /* Build configuration list for PBXProject "watchOS-mqtt-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCA93A2E7D8F21007119AA /* Debug */,
+				A9CCA93B2E7D8F21007119AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CCA93C2E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCA93D2E7D8F21007119AA /* Debug */,
+				A9CCA93E2E7D8F21007119AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CCA9432E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCA9442E7D8F21007119AA /* Debug */,
+				A9CCA9452E7D8F21007119AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CCA9462E7D8F21007119AA /* Build configuration list for PBXNativeTarget "watchOS-mqtt-sample Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CCA9472E7D8F21007119AA /* Debug */,
+				A9CCA9482E7D8F21007119AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9CCA95B2E7EDE6E007119AA /* XCRemoteSwiftPackageReference "swift-nio-ssl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.34.0;
+			};
+		};
+		A9CCA95E2E7EDE79007119AA /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server-community/mqtt-nio";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9CCA95C2E7EDE6E007119AA /* NIOSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9CCA95B2E7EDE6E007119AA /* XCRemoteSwiftPackageReference "swift-nio-ssl" */;
+			productName = NIOSSL;
+		};
+		A9CCA95F2E7EDE79007119AA /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9CCA95E2E7EDE79007119AA /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9CCA90D2E7D8F20007119AA /* Project object */;
+}
