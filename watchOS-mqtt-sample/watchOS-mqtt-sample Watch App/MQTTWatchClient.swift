@@ -121,7 +121,7 @@ final class MQTTWatchClient: ObservableObject {
                 try await withCheckedThrowingContinuation { continuation in
                     client
                         .publish(
-                            to: "watch/\(clientId)/send",
+                            to: "watch/my/send",
                             payload: buffer,
                             qos: .atLeastOnce
                         )
@@ -180,7 +180,7 @@ final class MQTTWatchClient: ObservableObject {
             guard let self else { return }
             switch result {
             case .success(let info):
-                guard info.topicName == "watch/\(self.clientId)/receive" else { return }
+                guard info.topicName == "watch/my/receive" else { return }
                 
                 var buffer = info.payload
                 let payload = buffer.readString(length: buffer.readableBytes) ?? ""
