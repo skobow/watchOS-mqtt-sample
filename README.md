@@ -119,5 +119,5 @@ specified destination.
 
 ## License
 
-This sample is provided as-is without an explicit license. Contact the project
-maintainer before using it in production applications.
+This project is distributed under the [MIT License](LICENSE.md). You are free
+to use, modify, and share the code in accordance with the license terms.
