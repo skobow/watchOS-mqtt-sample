@@ -1,5 +1,8 @@
 # watchOS MQTT Sample
 
+## NOTE: As watchOS does not support low-level network access (see [TN3135](https://developer.apple.com/documentation/technotes/tn3135-low-level-networking-on-watchos?utm_source=chatgpt.com)) this sample does not work on real hardware!
+
+
 A minimal watchOS app that demonstrates how to connect to an MQTT broker from
 SwiftUI using [MQTTNIO](https://github.com/swift-server/MQTTNIO). The app shows
 the current connection state, streams incoming messages, and lets the user send
