@@ -5,7 +5,8 @@
 ## Possible Solution Approach
 
 ```mermaid
-sequenceDiagram
+
+sequenceDiagram;
   autonumber
   participant Watch
   participant Backend
@@ -22,6 +23,7 @@ sequenceDiagram
   MQTT->>Backend: PUBLISH ack/…/{commandId} {accepted:true}
   Backend->>APNs: Push (deviceToken, payload<=4KB)
   APNs-->>Watch: Notification (Alert oder Silent)
+
 ´´´
 
 
