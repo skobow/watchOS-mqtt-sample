@@ -2,6 +2,28 @@
 
 ## NOTE: As watchOS does not support low-level network access (see [TN3135](https://developer.apple.com/documentation/technotes/tn3135-low-level-networking-on-watchos?utm_source=chatgpt.com)) this sample does not work on real hardware!
 
+## Possible Solution Approach
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant Watch
+  participant Backend
+  participant MQTT as MQTT Broker
+  participant APNs
+
+  Watch->>Backend: POST /v1/door/{doorId}/open {commandId, ts}
+  Backend->>Backend: Auth prüfen (JWT/OAuth), ACL
+  Backend->>MQTT: PUBLISH cmd/tenant/user/door/{doorId}/open (QoS1)
+  MQTT-->>Backend: PUBACK (QoS1)
+  Backend-->>Watch: 202 Accepted {commandId}
+
+  Note over MQTT,Backend: Controller verarbeitet und bestätigt z. B. auf ack/…/{commandId}
+  MQTT->>Backend: PUBLISH ack/…/{commandId} {accepted:true}
+  Backend->>APNs: Push (deviceToken, payload<=4KB)
+  APNs-->>Watch: Notification (Alert oder Silent)
+´´´
+
 
 A minimal watchOS app that demonstrates how to connect to an MQTT broker from
 SwiftUI using [MQTTNIO](https://github.com/swift-server/MQTTNIO). The app shows
